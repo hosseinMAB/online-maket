@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/check.css" />
+
+    <link rel="icon" href="icon/ap2.png" />
+</head>
+
+<body>
+
+
+
+    <div class="carts" id="carts_item">
+
+
+        <div class="top_cart">
+            <h3>shop cart <span class="cont_item">0</span></h3>
+            <button class="clos_cart" onclick="show_clos_cart_item()"><img src="icon/icons8-close-16.png"
+                    alt=""></button>
+        </div>
+
+        <div class="item_in_cart" id="item_cart">
+
+        </div>
+
+
+
+
+
+        <div class="bottom_cart">
+            <div class="total">
+                <p>subtotal cart</p>
+                <p class="pricl_total">0</p>
+            </div>
+            <div class="button_cart">
+                <span class="btn_cart" onclick="show_clos_cart_item()">shop mor</span>
+                <span class="btn_cart">Shop now</span>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <header>
+        <div class="top_hedar">
+            <div class="container">
+                <a href="0" class="logo">
+                    <img src="list_image/image1_0.jpg" alt="" /></a>
+                <!-- --------------------------- -->
+                <form action="" class="serch_pox">
+                    <!--select-->
+                    <div class="select_pox">
+                        <select id="category" name="category">
+                            <option value="Beauty">Beauty</option>
+                            <option value="Dior">Dior</option>
+                            <option value="Chanel">Chanel</option>
+                            <option value="Huda Beauty">Huda Beauty</option>
+                        </select>
+                    </div>
+                    <!--serch-->
+                    <input type="text" id="serch" name="serch" placeholder="enter serching" />
+
+                    <button type="submit">
+                        <img src="icon/icons8-search-16.png" alt="" />
+                    </button>
+                </form>
+                <!-- --------------------------- -->
+                <div class="hedar_icons">
+                    <div class="icon">
+                        <a href="">
+                            <img src="icon/icons8-love-32.png" alt="" />
+                            <span class="cont cont_favoret">0</span>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <img src="icon/icons8-shopping-cart-32.png" alt="" onclick="show_clos_cart_item()" />
+                        <span class="cont cont_item_marcting">0</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_hedar">
+            <div class="container">
+                <nav class="nav">
+                    <span class="open_menu" onclick="open_menu()"><img src="icon/icons8-menu-16.png" alt=""><img
+                            src="icon/icons8-chevron-right-16.png" alt=""></span>
+
+                    <div class="category_nav" id="nav">
+                        <div onclick="open_list_category()" class="category_btn">
+                            <img src="icon/icons8-menu-16.png" alt="" />
+                            <p id="click_list">Broser category</p>
+                            <img src="icon/icons8-expand-arrow-16.png" alt="" />
+                        </div>
+
+                        <div class="nav_category_links">
+                            <a href="">Mascara</a>
+                            <a href="">Foundation</a>
+                            <a href=""> Beauty Blender</a>
+                            <a href="">Concealer</a>
+                            <a href="">Blush</a>
+                            <a href="">Eyeliner</a>
+                            <a href="">Eye shadow</a>
+                            <a href="">Highlighter</a>
+                            <a href="">lipstick</a>
+                        </div>
+                    </div>
+                    <ul class="ul_links">
+                        <span class="menu_clos" onclick="clos_menu()"><img src="icon/icons8-close-16.png" alt=""></span>
+                        <li class="active" onclick="go_home()">home</li>
+                        <li><a href="">Abot</a></li>
+                        <li><a href="">accsisories</a></li>
+                        <li><a href="">blog</a></li>
+                        <li><a href="">contant</a></li>
+                    </ul>
+
+                </nav>
+
+                <div class="login_supin btn">
+                    <a href="" class="btn">LogIn
+                        <img src="icon/icons8-login-16 (1).png" alt="" />
+                    </a>
+                    <a href="" class="btn">SignUp <img src="icon/icons8-login-16.png" alt="" /></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="check_showp">
+        <form method="post" id="from_id"
+            action="https://script.google.com/macros/s/AKfycbyvBnd6sge85gXy2iBJyZYzTufuRHevkGgxA5gXLB2pbqa-EhZ8gqTBe7QfpxKE95U6/exec">
+            <div class="container">
+
+                <div class="order_item">
+                    <h1>orderers</h1>
+
+
+                    <div class="items" id="checkout">
+
+                    </div>
+
+                    <div class="buttom_orders">
+
+
+                        <div class="shop_table">
+                            <p>subtotal:</p>
+                            <span class="suptotal_check_out">$3.00</span>
+
+                        </div>
+
+                        <div class="shop_table">
+                            <p>shaing:</p>
+                            <span class="suptotal_check_out">$20</span>
+
+                        </div>
+
+                        <div class="shop_table">
+                            <p>total:</p>
+                            <span class="total_check">$3.00</span>
+
+                        </div>
+
+                        <div class="button_div">
+                            <button type="submit">shop bleas</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="input_info">
+                    <div class="addres">
+                        <h2>delivery addres:</h2>
+
+                        <div class="iputes">
+                            <label for="">Email</label>
+                            <input type="email" name="email" required>
+                        </div>
+
+                        <div class="iputes">
+                            <label for="">Name</label>
+                            <input type="text" name="name" required>
+                        </div>
+
+                        <div class="iputes">
+                            <label for="">Addreas</label>
+                            <input type="text" name="addres" required>
+                        </div>
+
+                        <div class="iputes">
+                            <label for="">phone</label>
+                            <input type="number" name="phon" required>
+                        </div>
+
+                    </div>
+                    <div class="compane_code">
+                        <h1> compon code</h1>
+                        <div class="div_code">
+                            <label for="">Code</label>
+                            <input type="number" placeholder="enter code">
+                        </div>
+                        <div class="btn_compon" style="height:70px ; box-shadow: none;">
+                            <button style="width: 120px;">Apply compon</button>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    </form>
+    <footer>
+        <div class="logo_big_footer">
+            <img src="list_image/image1_0.jpg" alt="">
+        </div>
+        <div class="url_footer">
+            <ul>
+                <li>
+                    Shanil
+                    <div>
+                        <a href=""><img src="icon/icons8-arrow-24.png" alt="">Mascara</a>
+                        <a href=""><img src="icon/icons8-arrow-24.png" alt="">Foundation</a>
+                        <a href=""><img src="icon/icons8-arrow-24.png" alt=""> Beauty Blender</a>
+                        <a href=""><img src="icon/icons8-arrow-24.png" alt="">Concealer</a>
+                        <a href=""><img src="icon/icons8-arrow-24.png" alt="">Blush</a>
+                    </div>
+                </li>
+                <li>
+                    dior
+                    <div>
+
+                        <a href=""><img src="icon/icons8-arrow-24.png" alt="">Mascara</a>
+                        <a href=""><img src="icon/icons8-arrow-24.png" alt="">Foundation</a>
+                        <a href=""><img src="icon/icons8-arrow-24.png" alt=""> Beauty Blender</a>
+                        <a href=""><img src="icon/icons8-arrow-24.png" alt="">Concealer</a>
+                        <a href=""><img src="icon/icons8-arrow-24.png" alt="">Blush</a>
+                    </div>
+                </li>
+                <li>
+                    biote
+                    <div>
+                        <a href=""><img src="icon/icons8-arrow-24.png" alt="">Mascara</a>
+                        <a href=""><img src="icon/icons8-arrow-24.png" alt="">Foundation</a>
+                        <a href=""><img src="icon/icons8-arrow-24.png" alt=""> Beauty Blender</a>
+                        <a href=""><img src="icon/icons8-arrow-24.png" alt="">Concealer</a>
+                        <a href=""><img src="icon/icons8-arrow-24.png" alt="">Blush</a>
+                    </div>
+                </li>
+
+
+            </ul>
+
+        </div>
+        <div class="contant_footer">
+            <img src="icon/icons8-facebook-logo-48.png" alt="">
+            <img src="icon/icons8-instagram-32.png" alt="">
+            <img src="icon/icons8-whatsapp.gif" alt="">
+        </div>
+    </footer>
+
+
+    <script src="js/index.js"></script>
+    <script src="js/supmit.js"></script>
+
+</body>
+
+</html>
